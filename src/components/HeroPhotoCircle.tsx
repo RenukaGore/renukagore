@@ -56,7 +56,7 @@ export default function HeroPhotoCircle() {
         transition={{ delay: 0.5 }}
         className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-slate-950/80 backdrop-blur-xl border border-indigo-500/40 px-4 py-3 rounded-2xl shadow-xl text-center min-w-[100px]"
       >
-        <span className="block text-lg font-bold text-indigo-400 leading-none">JAVA</span>
+        <span className="block text-lg font-bold text-indigo-400 leading-none">MERN</span>
         <span className="text-[10px] uppercase tracking-wider font-semibold text-slate-400">Full Stack</span>
       </motion.div>
 
