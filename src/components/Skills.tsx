@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
-import { Code2, Database, Layout, Server, Terminal, Wrench } from "lucide-react";
+import { motion, Variants } from "framer-motion";
+import { Database, Layout, Server } from "lucide-react";
 
 const skillCategories = [
   {
@@ -11,8 +11,7 @@ const skillCategories = [
       { name: "Bootstrap Framework", level: "Advanced" },
       { name: "Tailwind CSS", level: "Advanced" },
       { name: "HTML5 / CSS3", level: "Advanced" },
-      { name: "Javascript", level: "Advanced" }
-
+      { name: "Javascript", level: "Advanced" },
     ],
   },
   {
@@ -24,7 +23,7 @@ const skillCategories = [
       { name: "Express.js", level: "Intermediate" },
       { name: "REST APIs", level: "Advanced" },
       { name: "C / C++", level: "Basic" },
-      { name: "PHP", level: "Intermediate" }
+      { name: "PHP", level: "Intermediate" },
     ],
   },
   {
@@ -41,7 +40,7 @@ const skillCategories = [
   },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -49,12 +48,12 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: "easeOut" },
+    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
   },
 };
 
